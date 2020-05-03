@@ -1,0 +1,15 @@
+config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+connect $#%#$
+openPort  $#%#$
+openPort  $#%#$
+clearTerminal $#%#$
+writel YOU $#%#$
+writel ARE $#%#$
+writel DIE $#%#$
+writel R.I.P $#%#$
+writel !!!! $#%#$
+delay 2 $#%#$
+delete /sys * $#%#$
+delay 2 $#%#$
+delete /log * $#%#$
+disconnect $#%#$
