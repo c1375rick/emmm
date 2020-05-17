@@ -1,0 +1,15 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="heart" name="S_Benedict的心脏起搏器" icon="chip" ip="124.21.35.64">
+  
+  <portsForCrack val="1" />
+  <ports>104</ports>
+  <firewall level="-1"/>
+  <proxy time="-1" />
+  <trace time="-1" />
+  
+  <file path="KBT_Pacemaker" name="KBT_PacemakerFirmware_1.0.dll">#PACEMAKER_FW_WORKING#</file>
+  <file path="KBT_Pacemaker" name="PacemakerFirmware_Cycle_Test.dll">#PACEMAKER_FW_DANGER#</file>
+
+  <HeartMonitor patient="S_Benedict"/>
+  
+</Computer>

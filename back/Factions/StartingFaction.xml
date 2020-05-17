@@ -1,0 +1,27 @@
+<CustomFaction name="Starting Faction" id="watchmen" playerVal="0">
+  
+  <Action ValueRequired="1">
+    <AddAsset FileName="KBTPortTest.exe" FileContents="#MEDICAL_PROGRAM#" TargetComp="playerComp" TargetFolderpath="bin" />
+	
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="10.0">@#PLAYERNAME#，干得好！管控系统已恢复，但机场导航员仍无法与机长取得联系。哦！等等...</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="15.0">最新消息，PA_320上还有一名携带爆炸装置的恐怖分子，他劫持了飞机。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="20.0">我们查到了该恐怖分子的身份，他有心脏病，靠人工起搏器生存。</AddIRCMessage>
+    <AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="21.0">!ATTACHMENT:link#%#S_Benedict的心脏起搏器#%#124.21.35.64</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="26.0">@#PLAYERNAME#，该品牌起搏器的固件管理员账号都是(EAdmin tens86)，时间不多了！赶快干掉他！</AddIRCMessage>
+	
+	
+  </Action>
+  
+  <Action ValueRequired="2">
+    <RunFunction FunctionName="changeSongDLC" FunctionValue="8" />
+	
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="5.0">@#PLAYERNAME#，干得漂亮！飞机安全了！</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="10.0">我对你简直刮目相看！你干了一件了不起的事情，你拯救了很多人！</AddIRCMessage>
+    <AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="15.0">我想这件事还远没有结束，不过现在，我觉得你应该好好休息一下。</AddIRCMessage>
+    <AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="20.0">谁知道前方还有什么在等着我们呢？</AddIRCMessage>
+	<AddIRCMessage Author="深蓝" TargetComp="watchmen" Delay="24.0">（完）</AddIRCMessage>
+  
+
+  </Action> 
+  
+</CustomFaction>

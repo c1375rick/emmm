@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="protection" activeCheck="true">
+  <goals>
+    <!-- Goals here -->
+	<goal type="fileupload" target="playerComp" file="747FlightOps.dll" destTarget="dair_crash" destPath="FlightSystems"/>
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+
+  <missionEnd val="1">addRankSilent</missionEnd> 
+  <nextMission IsSilent="true">Missions/StartingMission2.xml</nextMission>
+  <branchMissions>
+  <branch>Missions/Branch/BranchMission.xml</branch>
+  </branchMissions>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender></sender>
+    <subject></subject>
+    <body>
+</body>
+    <attachments>
+	  
+      <!-- Add attachments like links and notes here -->
+    </attachments>
+  </email>
+</mission>

@@ -1,0 +1,10 @@
+<ConditionalActions>
+  
+  <Instantly>
+  
+    <RunFunction FunctionName="playCustomSongImmediatley:Music/CrashTrack.ogg" />
+	<LaunchHackScript Filepath="HackerScripts/failure.txt" DelayHost="watchmen" Delay="0.1" SourceComp="playerComp" TargetComp="playerComp" RequireLogsOnSource="false" />
+	
+  </Instantly>
+
+</ConditionalActions>

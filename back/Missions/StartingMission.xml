@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="startingMission" activeCheck="false">
+  <goals>
+    <!-- Goals here -->
+	
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  <missionStart>loadConditionalActions:Actions/Indication.xml</missionStart>
+  <nextMission>NONE</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>守望者08</sender>
+    <subject>求救信号</subject>
+    <body>#PLAYERNAME#，我们刚接到来自太平洋航空的求救信号，请速进入组织线路接受下一步行动指示。
+</body>
+    <attachments>
+	  <link comp="watchmen" />
+      <!-- Add attachments like links and notes here -->
+    </attachments>
+  </email>
+</mission>

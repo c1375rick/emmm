@@ -1,0 +1,12 @@
+<ConditionalActions>
+  
+  <Instantly>
+  
+    <AddAsset FileName="SSHCrack.exe" FileContents="#SSH_CRACK#" TargetComp="playerComp" TargetFolderpath="bin" />
+    <AddAsset FileName="PacificPortcrusher.exe" FileContents="#PACIFIC_EXE#" TargetComp="playerComp" TargetFolderpath="bin" />
+	<DeleteFile TargetComp="dair_crash" FilePath="FlightSystems" FileName="747FlightOps.dll" DelayHost="watchmen" Delay="0.1"/>
+	<RunFunction FunctionName="setFaction:watchmen" />
+	
+  </Instantly>
+
+</ConditionalActions>

@@ -1,0 +1,17 @@
+﻿config [TARGET_COMP] [SOURCE_COMP] 0.2 $#%#$
+clearTerminal $#%#$
+writel 下一个就轮到你们 $#%#$
+delay 2 $#%#$
+systakeover $#%#$
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<ConditionalActions>
+  
+  <OnConnect target="watchmen" needsMissionComplete="false">
+    <LoadMission MissionName="Missions/protection.xml" />
+    <ChangeAlertIcon Target="watchmen" Type="irc"/>
+	<RunFunction DelayHost="watchmen" Delay="35.5" FunctionName="playCustomSongImmediatley:Music/Sabotage.ogg" />
+	<RunFunction DelayHost="watchmen" Delay="73.5" FunctionName="defAttackAircraft" />
+	<LaunchHackScript Filepath="HackerScripts/connection.txt" DelayHost="watchmen" Delay="73.6" SourceComp="playerComp" TargetComp="playerComp" RequireLogsOnSource="false" />
+	
+	<AddIRCMessage Author="深蓝" TargetComp="watchmen" Delay="0.1">!ANNOUNCEMENT!</AddIRCMessage>
+    <AddIRCMessage Author="深蓝" TargetComp="watchmen" Delay="0.3">@channel，"#PLAYERNAME#"已通过身份验证并进入频道。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="5.0">@#PLAYERNAME#，初次见面，我是这次行动的负责人。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="11.0">我们收到求救，一架PA_320客机的管控系统发生异常，疑似恐怖分子所为，该机正位于太平洋上空。</AddIRCMessage>
+    <AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="17.0">你的任务是全力保障该机的飞行安全。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="22.0">!ATTACHMENT:link#%#PA_320机载电脑#%#209.15.13.134</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="23.5">!ATTACHMENT:link#%#PA_133机载电脑#%#208.73.211.70</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="watchmen" Delay="27.0">随时待命。</AddIRCMessage>
+	<AddIRCMessage Author="深蓝" TargetComp="watchmen" Delay="35.0">!ANNOUNCEMENT!@channel，已收到上级指令！</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="45.0">@#PLAYERNAME#，收到消息，目前针对入侵者的一切地面阻断措施都已失效。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="50.0">入侵者已打开空地数据链并正向该机管控系统上传恶意程序。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="55.0">管控系统一旦失控，太平洋可能会成为它的墓地。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="60.0">我们决不允许这种情况发生！</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="65.0">我已向你的主机发送了必要工具，它们会助你一臂之力。</AddIRCMessage>
+	<AddIRCMessage Author="守望者08" TargetComp="watchmen" Delay="70.0">祝你好运！</AddIRCMessage>
+	<AddIRCMessage Author="#PLAYERNAME#" TargetComp="watchmen" Delay="75.0">收到！</AddIRCMessage>
+	
+	
+  </OnConnect>
+
+</ConditionalActions>

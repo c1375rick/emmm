@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="watchmen" name="噬菌体" icon="DLCServer" type="3" >
+
+  <portsForCrack val="4" />
+  <ports>22, 21, 25</ports>
+  <trace time="-1" />
+
+  <IRCDaemon themeColor="0,0,139" name="组织线路" needsLogin="false">
+    <user name="深蓝" color="0,0,139"/>
+	<user name="守望者08" color="255,0,0"/>
+    <user name="#PLAYERNAME#" color="128,128,128"/>	
+	
+  </IRCDaemon>
+  
+  
+</Computer>
