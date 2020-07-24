@@ -3,11 +3,11 @@
 
   
   <portsForCrack val="0" />
-  <ports>3724, 9418</ports>
+  <ports>21, 80</ports>
   <trace time="-1" />
 
-  <file path="home" name="Guide.txt">This sort of thing is very difficult for most players to find - the only link to it is in the log folder, which players generally don't read, and rm *.
-  
-Still, pretty cool way to hide something really secret!</file>
+  <file path="home" name="Guide.txt">这是个无趣的彩蛋文件
+ https://github.com/komeiji-satori/Dress
+  好了，现在有点意思了</file>
   
 </Computer>
